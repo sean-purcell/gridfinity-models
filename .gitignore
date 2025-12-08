@@ -1,4 +1,6 @@
 
+*.stl
+*.3mf
 ignore/
 stl/
 batch/

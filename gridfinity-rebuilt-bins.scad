@@ -143,7 +143,7 @@ bin_render(bin1) {
 }
 
 // ===== EXAMPLES ===== //
-/*
+
 // 1x1 bin
 bin_11 = new_bin([1, 1], fromGridfinityUnits(2));
 // 3x3 bin
@@ -277,4 +277,4 @@ bin_render(bin_44) {
     bin_translate(bin_44, [j*gx/(i+1), gy-i-1])
     compartment_cutter(cgs([gx/(i+1), 1]), center_top=false);
 }
-*/
+

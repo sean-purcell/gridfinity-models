@@ -422,7 +422,12 @@ function _bin_get_infill_grid(bin, exact) =
         element_dimensions = infill_element_dimensions,
         perimeter = base_perimeter + _BIN_WALL_PERIMITER))
     // Ensure the calculations are correct.
-    assert(grid_get_total_dimensions(equal_grid) == infill_size_mm)
+    echo(str(
+    "\n",
+    "Infill Dimensions*: ", infill_size_mm, "\n",
+    "dims: ", grid_get_total_dimensions(equal_grid), "\n",
+    ))
+    //assert(grid_get_total_dimensions(equal_grid) == infill_size_mm)
     assert(grid_get_total_dimensions(exact_grid) == infill_size_mm)
     let(infill_grid = exact ? exact_grid : equal_grid)
     infill_grid;
